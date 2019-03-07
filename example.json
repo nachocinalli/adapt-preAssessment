@@ -1,0 +1,29 @@
+    //course.json
+
+    "_preAssessment": {
+        "_isEnabled": true,
+        "_assessmentId": "a-pre-assessment",
+        "_setStatusCompleted": {
+            "_isEnabled": true,
+            "_isSequential": true
+        },
+        "_showScoresOnMenu": {
+            "_isEnabled": true,
+            "_scoreLabel": "Pre-Assessment score: "
+        },
+        "_config": [
+            {
+                "_pageId": "co-05",
+                "_quizBankID": 1
+            },
+            {
+                "_pageId": "co-10",
+                "_quizBankID": 2
+            },
+            {
+                "_pageId": "co-15",
+                "_quizBankID": 3
+            }
+        ]
+    }
+

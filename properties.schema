@@ -1,0 +1,143 @@
+{
+   "type":"object",
+   "$schema":"http://json-schema.org/draft-04/schema",
+   "id":"http://jsonschema.net",
+   "required":false,
+   "properties":{
+      "pluginLocations":{
+         "type":"object",
+         "required":true,
+         "properties":{
+            "config":{
+               "type":"object"
+            },
+            "course":{
+               "type":"object",
+               "properties":{
+                  "_preAssessment":{
+                     "type":"object",
+                     "required":false,
+                     "legend":"PreAssessment",
+                     "properties":{
+                        "_isEnabled":{
+                           "type":"boolean",
+                           "required":true,
+                           "title":"Enabled",
+                           "inputType":"Checkbox",
+                           "validators":[
+
+                           ]
+                        },
+                            
+                        "_assessmentId":{
+                           "type":"string",
+                           "required":true,
+                           "title":"Assessment Name",
+                           "default":"",
+                           "inputType":"Text",
+                           "validators":[
+
+                           ],
+                           "help":"Unique name for the assessment."
+                        },
+                        "_showScoresOnMenu": {
+                           "type": "object",
+                           "required": false,
+                           "title": "Show score on menu items",
+                           "properties": {
+                           "_isEnabled": {
+                              "type": "boolean",
+                              "required": false,
+                              "title": "Enabled",
+                              "inputType": "Checkbox",
+                              "help": "",
+                              "validators": []
+                           },
+                           "_scoreLabel": {
+                             "type": "string",
+                              "required": false,
+                              "title": "Score label",
+                              "inputType": "Text",
+                              "help": "",
+                              "validators": []
+                           }
+                           }
+                        },
+                        "_setStatusCompleted": {
+                           "type": "object",
+                           "required": false,
+                           "title": "Set page status completed",
+                           "properties": {
+                           "_isEnabled": {
+                              "type": "boolean",
+                              "required": false,
+                              "title": "Enabled",
+                              "inputType": "Checkbox",
+                              "help": "",
+                              "validators": []
+                           },
+                           "_isSequential": {
+                             "type": "boolean",
+                              "required": false,
+                              "title": "Is sequential",
+                              "inputType": "Checkbox",
+                              "help": "",
+                              "validators": []
+                           }
+                           }
+                        },
+                        "_config":{
+                           "type":"array",
+                           "required":true,
+                           "title":"Configuration",
+                           "items":{
+                              "type":"object",
+                              "required":true,
+                              "properties":{
+                                  "_pageId":{
+                                    "type":"string",
+                                    "required":false,
+                                    "title":"Page Id",
+                                    "default":"",
+                                    "inputType":"Text",
+                                    "validators":[
+
+                                    ],
+                                    "help":""
+                                 },
+                                 "_quizBankID":{
+                                     "type": "number",
+                                    "required": false,
+                                    "title": "Bank ID",
+                                    "inputType": "Number",
+                                    "default": 1,
+                                    "help": "",
+                                    "validators": ["number"],
+                                    "editorAttrs": {
+                                    "step": 1,
+                                    "min": 1
+                                    }
+                                 }
+                              }
+                           }
+                        }
+                     }
+                  }
+               }
+            },
+            "contentobject":{
+               "type":"object"
+            },
+            "article":{
+               "type":"object"
+            },
+            "block":{
+               "type":"object"
+            },
+            "component":{
+               "type":"object"
+            }
+         }
+      }
+   }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "adapt-preAssessment",
+  "version": "0.0.5",
+  "framework": ">=2.2",
+  "homepage": "",
+  "issues": "",
+  "displayName" : "PreAssessment",
+  "extension" : "preAssessment",
+  "description": "Pre Assessment extension.",
+  "main": "/js/adapt-preAssessment.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-extension"
+  ],
+  "license": "GPLv3",
+  "targetAttribute": "_preAssessment"
+}
